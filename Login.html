@@ -1,0 +1,552 @@
+<script>
+  if (localStorage.getItem("id")) {
+    location.replace("index.html");
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fashion Platform | Login page </title>
+
+  <!-- Font css  -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="fonts/fonts.css">
+
+  <!-- Fontawesome css      -->
+  <link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap css      -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Owncarousel css      -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+
+  <!-- image zoom -->
+  <link rel="stylesheet" href="css/glasscase.css">
+  <link rel="stylesheet" href="css/glasscase.minf195.css">
+
+  <!-- CSS STYLE-->
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+  <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+  <link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+  <!-- Main css   -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+</head>
+
+<body>
+  <!--  HEADER-AREA  -->
+  <header class="entire_header">
+    <div class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-5">
+            <div class="user-menu">
+              <ul class="list-unstyled list-inline">
+                <li class="dropdown dropdown-small">
+                  <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span
+                      class="value">English
+                    </span><i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">English</a>
+                    </li>
+                    <li><a href="#">French</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown dropdown-small">
+                  <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span
+                      class="value">TND
+                    </span><i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">TND</a>
+                    <li><a href="#">USD</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li>Welcome to Fashion Platform</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-7">
+            <div class="header-right">
+              <ul>
+                <li class="dropdown dropdown-small">
+                  <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><img class="account"
+                      src="images/account.png" alt="#"><span class="value">My Account </span><i
+                      class="fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu account-menu">
+                    <li><a href="profile.html">My account</a>
+                    </li>
+                    <li><a href="wishlist.html">Wishlist</a>
+                    </li>
+                    <li><a href="product-list.html">Shopping</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="register.html"><img src="images/check.png" alt="#"> Register</a>
+                </li>
+                <li class="last-child">
+                  <a class="logg" href="#"><img class="login" src="images/log.png" alt="#"> Login</a>
+                </li>
+                <li>
+                  <a id="logout" href="#" onclick="logout()"><img class="login" src="images/log.png" alt="#">
+                    Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header-area:END -->
+
+    <!-- Logo-area -->
+    <style>
+      .logo img {
+        width: 300px;
+        margin-bottom: 50px;
+      }
+    </style>
+    <div class="logo_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-xs-12">
+            <div class="logo">
+              <a href="index.html"><img src="images/Fashion platform.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-8 col-md-8 col-xs-12">
+            <div class="search-area">
+              <form>
+                <div class="control-group">
+
+                  <ul class="categories-filter animate-dropdown">
+                    <li class="dropdown">
+
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">All Categories <b
+                          class="caret"></b></a>
+
+                      <ul class="dropdown-menu" role="menu">
+
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="product-list.html">Fashion</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="product-list.html">Watches</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="product-list.html">House
+                            Wares</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="product-list.html">Desktop</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"
+                            href="product-list.html">Smartphones</a>
+                        </li>
+
+
+                      </ul>
+                    </li>
+                  </ul>
+                  <input class="search-field" placeholder="Search here..." />
+                  <a class="search-button" href="#"></a>
+                </div>
+              </form>
+            </div>
+            <div class="logo_right">
+              <span><i class="fa fa-phone"></i></span>
+              <a href="tel:+112345689">CALL US FREE
+                <br />+216 26 598 399</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOGO-AREA:END -->
+
+    <!-- MENU-AREA -->
+
+    <div class="menu-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="categories">
+              <ul id="nav">
+                <li>Categories <i class="fa fa-bars"></i>
+                  <ul>
+                    <li><a href="product-list.html"><i class="fa fa-male"></i> Fashion</a> </li>
+                    <li><a href="product-list.html"><i class="fa fa-clock-o"></i> Watches</a>
+                    </li>
+                    <li><a href="product-list.html"><i class="fa fa-home"></i>House Wares </a> </li>
+                    <li><a href="product-list.html"><i class="fa fa-desktop"></i> Desktop & Monitors
+                      </a>
+                    </li>
+                    <li><a href="product-list.html"><i class="fa fa-mobile"></i> Smartphones</a>
+                    </li>
+                    <li><a href="product-list.html"><i class="fa fa-laptop"></i> Laptop & Tablates
+                      </a>
+                    </li>
+                    <li><a href="product-list.html"><i class="fa fa-lightbulb-o"></i> Light & Lamps
+                      </a>
+                    </li>
+                    <li><a href="product-list.html"><i class="fa fa-volume-up"></i> Sound &
+                        Audio</a>
+                    </li>
+                    <li><a href="product-list.html"><i class="fa fa-heart-o"></i> Health &
+                        Medical</a>
+                    </li>
+                    <li><a href="product-list.html"><i class="fa fa-heartbeat"></i> Gym
+                        Equipments</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <nav class="main-menu">
+              <ul id="navigation">
+                <li class="active"><a href="index.html">Home </a>
+                </li>
+                <li><a href="about-us.html">About Us</a>
+                </li>
+                <li><a href="product-list.html">Product List </a>
+                </li>
+                <li><a href="Men.html">Men</a>
+                </li>
+                <li><a href="Women.html">Women</a>
+                </li>
+                <li><a href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <div class="only-for-mobile">
+              <div class="col-xs-12">
+                <ul class="ofm">
+                  <li class="m_nav"><i class="fa fa-bars"></i> Navigation</li>
+                </ul>
+
+                <!-- MOBILE MENU -->
+                <div class="mobi-menu">
+                  <div id='cssmenu'>
+                    <ul>
+                      <li class='active'>
+                        <a href='index.html'><span>Home</span></a>
+                      </li>
+                      <li>
+                        <a href='about-us.html'><span>About Us</span></a>
+                      </li>
+                      <li>
+                        <a href="product-list.html"><span>Product List</span> </a>
+                      </li>
+                      <li>
+                        <a href='Men.html'><span>Men</span></a>
+                      </li>
+                      <li>
+                        <a href='Women.html'><span>Women</span></a>
+                      </li>
+                      <li>
+                        <a href='contact-us.html'><span>Contact Us</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="menu_right">
+              <a href="cart-page.html"><i class="fa fa-shopping-cart"></i>My Cart</a>
+              <span>2</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MENU-AREA:END -->
+  </header>
+  <!-- Header-AREA END -->
+
+  <!-- PAGE-TITLE-AREA -->
+  <section class="page-title-area">
+    <div class="page-title-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="page-title">
+              <h3>Login</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PAGE-TITLE-AREA:END -->
+
+  <!-- BREADCRUMBS -->
+  <div class="title-breadcrumb">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="bred-title">
+            <h3>Login</h3>
+          </div>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="about-us.html">Login</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BREADCRUMBS:END  -->
+
+  <!-- CHECK-CONTACT-AREA -->
+  <div class="touch-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="headline">
+            <h2>Register Here</h2>
+          </div>
+          <div class="stay-left">
+            <form onsubmit="return false">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="touch-left">
+                    Email
+                    <br>
+                    <input
+                      style="width: 100%; height: 40px; background-color: rgb(232, 231, 231); border: none; color: black; padding-left: 15px;"
+                      type="email" name="email" id="email">
+                    <br> Password
+                    <br>
+                    <input
+                      style="width: 100%; height: 40px; background-color: rgb(232, 231, 231); border: none; color: black; padding-left: 15px;"
+                      type="password" name="password" id="password">
+                  </div>
+
+                  <div class="form_submit">
+                    <input type="submit" name="submit" value="sign in" onclick="login()" />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div>
+              <p style="margin: 0;">Don't have account yet ?</p>
+              <a href="register.html">Register Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECK-CONTACT-AREA:END   -->
+
+  <!-- BILL-SHIP-AREA   -->
+
+  <!-- BILL-SHIP-AREA:END   -->
+
+  <!-- PAYMENT-AREA   -->
+
+  <!-- PAYMENT-AREA:END   -->
+
+  <!-- Entire FOOTER:START -->
+  <footer class="entire_footer">
+    <!-- FOOTER-TOP-AREA -->
+
+    <!-- FOOTER-TOP-AREA:END -->
+
+    <!-- FOOTER-WIDGET-AREA -->
+    <div class="footer-widget">
+      <div class="ovelay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-sm-4 col-xs-12">
+              <div class="widget_logo">
+                <a href="index.html"><img Style="width: 300px;" src="images/Fashion platform.png" alt="logo"></a>
+                <ul>
+                  <li>
+                    <div class="wl_left">
+                      <i class="fa fa-location-arrow"></i>
+                    </div>
+                    <div class="wl_right">
+                      <a href="#"><span>Address :</span> Tunisia / Mahdia, 5121</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wl_left">
+                      <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <div class="wl_right">
+                      <a href="#"><span>E-mail :</span> hammouda.6f1996@live.fr</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wl_left">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="wl_right">
+                      <a href="#"><span>phone :</span> +216 26 598 399</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2 col-sm-2 col-xs-12">
+              <div class="widget_single">
+                <h4><a href="#">My Account</a></h4>
+                <ul>
+                  <li><a href="profile.html">My Account</a>
+                  </li>
+                  <li><a href="wishlist.html">Wishlist</a>
+                  </li>
+                  <li><a href="cart-page.html">Shopping Cart</a>
+                  </li>
+                  <li><a href="register.html">Register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2 col-sm-2 col-xs-12">
+              <div class="widget_single">
+                <h4><a href="#">Information</a></h4>
+                <ul>
+                  <li><a href="about-us.html">About us</a>
+                  </li>
+                  <li><a href="contact-us.html">Contact-us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER-WIDGET-AREA:END -->
+
+    <!-- FOOTER-AREA -->
+    <div class="footer_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="footer_text">
+              <p>&copy;2021 <a href="index.html">Fashion Platform</a>. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER-AREA:END -->
+  </footer>
+  <!-- Entire FOOTER:END -->
+
+  <!-- jQuery latest -->
+  <script type="text/javascript" src="js/jQuery.2.1.4.js"></script>
+
+  <!-- js Modernizr -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+
+  <!-- Revolution slider -->
+  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+  <!-- Bootsrap js -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Plugins js -->
+  <script src="js/plugins.js"></script>
+
+  <!-- Owl js -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <!-- Custom js -->
+  <script src="js/main.js"></script>
+  <script>
+    function login() {
+      var url = "http://127.0.0.1:3000/clients"; //definir la collection a manupiler
+      var email = document.getElementById("email").value; // récupération de la email saisir dans notre code html
+      var password = document.getElementById("password").value;// récupération de la password saisir dans notre code html
+      var xhr = new XMLHttpRequest(); // definir une request de connection standard js
+      xhr.open("GET", url, true); // choisir la méthode get comme une méthode d'accès au serveur et récupérer les données .
+      xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8'); // choisir l'encodage utf-8 pour que la resultat retourne peux avoir différents format de text comme les côté , les accent …..
+      xhr.onload = function () { // load les données à partir de la serveur -> début connection
+        var clients = JSON.parse(xhr.responseText); // conversion des données en format json
+        if (xhr.readyState == 4 && xhr.status == "200") { // if la status retourné par la serveur est 200 donc ont dans le cas succes
+          access = false; // définir une variable access par défaut avec la valeur false
+          /* bouclé la liste des utilisateurs */
+          for (i = 0; i < clients.length; i++) {
+            if (clients[i].email == email && clients[i].password == password) { // if les données recuperer et la valeur auctual dans la base sont égaux alors en changer access a true .
+              access = true;
+              if (typeof Storage !== "undefined") {
+                localStorage.setItem("id", clients[i]._id);
+                localStorage.setItem("firstname", clients[i].firstname);
+                localStorage.setItem("lastname", clients[i].lastname);
+              } else {
+                alert("Sorry, your browser does not support Web Storage...");
+              }
+            }
+          }
+          // si la variable accès contient true on est autorisé à accéder.
+          if (access) {
+            alert("Welcome client");
+            location.replace("index.html");
+          }
+          else {
+            alert("Invalid Login OR Password");
+          }
+        }
+        else {
+          alert("Error Server Connection");
+        }
+      }
+      xhr.send();
+    }
+  </script>
+
+  <script>
+    onload=function logout() {
+      if (!localStorage.getItem("id")) {
+        document.getElementById("logout").style.display = "none";
+      }
+      else {
+        var c = window.confirm("Want to LOGOUT?!");
+        if (c == true) {
+          localStorage.clear();
+          location.replace("login.html");
+        }
+      }
+    }
+  </script>
+  
+</body>
+
+
+
+</html>
